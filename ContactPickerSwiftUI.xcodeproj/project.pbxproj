@@ -11,6 +11,10 @@
 		E96FFE3224EF0428000F8DEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96FFE3124EF0428000F8DEF /* ContentView.swift */; };
 		E96FFE3424EF042C000F8DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96FFE3324EF042C000F8DEF /* Assets.xcassets */; };
 		E96FFE3724EF042C000F8DEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96FFE3624EF042C000F8DEF /* Preview Assets.xcassets */; };
+		E96FFE3F24EF0482000F8DEF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96FFE3E24EF0482000F8DEF /* Extensions.swift */; };
+		E96FFE4124EF04EE000F8DEF /* ContactPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96FFE4024EF04EE000F8DEF /* ContactPickerView.swift */; };
+		E96FFE4324EF0517000F8DEF /* ContactsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96FFE4224EF0517000F8DEF /* ContactsProvider.swift */; };
+		E96FFE4624EF0599000F8DEF /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96FFE4524EF0599000F8DEF /* ContactRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		E96FFE3324EF042C000F8DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E96FFE3624EF042C000F8DEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E96FFE3824EF042C000F8DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96FFE3E24EF0482000F8DEF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E96FFE4024EF04EE000F8DEF /* ContactPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPickerView.swift; sourceTree = "<group>"; };
+		E96FFE4224EF0517000F8DEF /* ContactsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsProvider.swift; sourceTree = "<group>"; };
+		E96FFE4524EF0599000F8DEF /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,10 @@
 		E96FFE2E24EF0428000F8DEF /* ContactPickerSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				E96FFE4424EF0573000F8DEF /* Views */,
 				E96FFE2F24EF0428000F8DEF /* ContactPickerSwiftUIApp.swift */,
-				E96FFE3124EF0428000F8DEF /* ContentView.swift */,
+				E96FFE4224EF0517000F8DEF /* ContactsProvider.swift */,
+				E96FFE3E24EF0482000F8DEF /* Extensions.swift */,
 				E96FFE3324EF042C000F8DEF /* Assets.xcassets */,
 				E96FFE3824EF042C000F8DEF /* Info.plist */,
 				E96FFE3524EF042C000F8DEF /* Preview Content */,
@@ -67,6 +77,16 @@
 				E96FFE3624EF042C000F8DEF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E96FFE4424EF0573000F8DEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E96FFE3124EF0428000F8DEF /* ContentView.swift */,
+				E96FFE4024EF04EE000F8DEF /* ContactPickerView.swift */,
+				E96FFE4524EF0599000F8DEF /* ContactRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E96FFE3224EF0428000F8DEF /* ContentView.swift in Sources */,
+				E96FFE3F24EF0482000F8DEF /* Extensions.swift in Sources */,
 				E96FFE3024EF0428000F8DEF /* ContactPickerSwiftUIApp.swift in Sources */,
+				E96FFE4324EF0517000F8DEF /* ContactsProvider.swift in Sources */,
+				E96FFE4124EF04EE000F8DEF /* ContactPickerView.swift in Sources */,
+				E96FFE4624EF0599000F8DEF /* ContactRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
