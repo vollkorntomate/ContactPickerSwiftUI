@@ -7,16 +7,15 @@ struct ContactRow: View {
     @Binding var selectedContact: CNContact?
     
     var body: some View {
-        Rectangle().fill(Color.white)
-            .onTapGesture {
-                selectContact()
+        Button(action: {
+            selectContact()
+        }) {
+            HStack {
+                Text("\(contact.familyName)").fontWeight(.bold)
+                Text("\(contact.givenName) \(contact.middleName)")
             }
-            .overlay(
-                HStack {
-                    Text("\(contact.familyName)").fontWeight(.bold)
-                    Text("\(contact.givenName) \(contact.middleName)")
-                }
-            , alignment: .leading)
+            .foregroundColor(.black)
+        }
     }
     
     func selectContact() {
